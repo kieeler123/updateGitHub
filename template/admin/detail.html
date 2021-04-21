@@ -1,0 +1,19 @@
+{% set title = "paging" %}
+{% extends "layout/base.html" %}
+
+{% block content %}
+    <div>
+        <div>
+            {{db.name}}
+        </div>
+        <div>
+            <div>
+                date : {{db.dateFormat(db.createdAt)}}
+            </div>
+            {{db.description}}
+        </div>
+    </div>
+
+    <a href="/admin/table" class="btn">return</a>
+    <a href="/admin/table/edit/{{db.id}}" class="btn">renew</a>
+{% endblock %}

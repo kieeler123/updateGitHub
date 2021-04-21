@@ -1,0 +1,26 @@
+{% set title = "database" %}
+{% extends "layout/base.html" %}
+
+{% block content %}
+    <table>
+        <tr>
+            <th>제목</th>
+            <th>날짜</th>
+            <th>삭제</th>
+        </tr>
+        {% for db in table %}
+            <tr>
+                <td>
+                    <a href="/admin/table/detail/{{db.id}}">{{db.name}}</a>
+                </td>
+                <td>
+                    {{db.dateFormat(db.createdAt)}}
+                </td>
+                <td>
+                    <a href="/admin/table/delete/{{db.id}}" class="btn" onclick="return confirm='do you want delete?'">delete</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <a href="/admin/table/write" class="btn">write</a>
+{% endblock %}

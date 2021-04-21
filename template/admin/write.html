@@ -1,0 +1,22 @@
+{% set title = "create data" %}
+{% extends "layout/base.html" %}
+
+{% block content %}
+    <form action="" method="POST">
+        <table>
+            <tr>
+                <th>제품명</th>
+                <td><input type="text" name="name" value="{{db.name}}"></td>
+            </tr>
+            <tr>
+                <th>가격</th>
+                <td><input type="text" name="price" value="{{db.price}}"></td>
+            </tr>
+            <tr>
+                <th>설명</th>
+                <td><input type="text" name="description" value="{{db.description}}"></td>
+            </tr>
+        </table>
+        <button class="btn">write</button>
+    </form>
+{% endblock %}
