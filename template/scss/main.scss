@@ -1,0 +1,15 @@
+main{
+    grid-column: 2/6;
+    section{
+        height: 1200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:nth-of-type(odd){
+            background-color: lightcoral;
+        }
+        &:nth-of-type(even){
+            background-color: lightgreen;
+        }
+    }
+}

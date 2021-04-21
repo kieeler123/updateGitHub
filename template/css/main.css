@@ -1,0 +1,2 @@
+main{-ms-grid-column:2;-ms-grid-column-span:4;grid-column:2/6}main section{height:1200px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}main section:nth-of-type(odd){background-color:lightcoral}main section:nth-of-type(even){background-color:lightgreen}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+{% set title = "main page" %}
+{% extends "layout/base.html" %}
+
+{% block content %}
+    <div class="perspective">
+        <div class="contents front">
+            <div class="text">
+                <h1>FrontSide</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+        <div class="contents back">
+            <div class="text">
+                <h1>BackSide</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section clsss="s1">section1</section>
+        <section clsss="s2">section2</section>
+        <section clsss="s3">section3</section>
+        <section clsss="s4">section4</section>
+    </main>
+{% endblock %}

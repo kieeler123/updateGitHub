@@ -1,0 +1,44 @@
+.perspective{
+    height: 70vh;
+    perspective: 500px;
+    perspective-origin: 20%, 50%;
+    transition: 2s;
+    position: relative;
+    transform-style: preserve-3d;
+    grid-column: 1/7;
+    .contents{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        .text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transform: translateZ(4rem) scale(.8);
+            height: 100%;
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        &.front{
+            background-color: lightcoral;
+            transform-style: preserve-3d;
+            box-shadow : 0 0 10px gray inset, 0 0 10px black;
+        }
+        &.back{
+            background-color: lightseagreen;
+            transform-style: preserve-3d;
+            transform: rotateY(-180deg);
+            perspective: inherit;
+            box-shadow : 0 0 10px gray inset, 0 0 10px black;
+        }
+    }
+}
+.rotate{
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,31 @@
+header{
+    height: 80px;
+    background-color: lightcyan;
+    display: grid;
+    grid-column: 1/7;
+    grid-template-columns: repeat(6,1fr);
+    .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        &:hover{
+            background-color: lightblue;
+        }
+    }
+    .fab.fa-reddit{
+        font-size: 40px;
+        color: black;
+    }
+}
+footer{
+    height: 120px;
+    background-color: lightcyan;
+    grid-column: 1/7;
+    address{
+        line-height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
